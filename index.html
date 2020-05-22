@@ -2,67 +2,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="opening.css">
-	<style>
-	  @font-face { font-family: Commodore; src: url('Commodore-64-v6.3.TTF'); } 
-      h1 {
-         font-family: Commodore
-      }
-	  a {text-decoration: none
-	  }
-	  
-	  a:hover {
-  text-decoration: underline;
-  color: green;
-}
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Arthur Mulder</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #ffffff;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+	  background: linear-gradient(to bottom, #0000ff 0%, #ff0000 100%);
+      color: #ffffff;
+  }
+  .bg-2 { 
+     background-color: #990000;
+      color: #ffffff;
+  }
+  .bg-3 { 
+       background: linear-gradient(to bottom, #ff0000 0%, #0000ff 100%);
+      color: #ffffff;
+  }
+  .bg-4 { 
+      background-color: #000000;
+      color: #cccccc;
+  }
 
-img {
-  position: relative;
-  left: 2px;
-  top: 0px;
-}
-
-div.relative {
-  left: 30px;
-  right: 30px;
-}
-
-.fontsize4 {
-	text-align: center;
-}
-
-body {
-	cursor: url('cursor.png');
-}
-	</style>
-
+  .container-fluid {
+      padding-top: 50px;
+      padding-bottom: 45px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
 </head>
-<body bgcolor="#000000">
+<body>
 
-<h1 class = "fontsize4">
+<!-- Navbar -->
+<nav class="navbar bg-4 navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="websidehtml.html">Ik</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="hobbys.html">Hobby's</a></li>
+        <li><a href="school.html">School</a></li>
+        <li><a href="toekomst.html">Toekomst</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<font size="10"  color="green">
-<h1>The Night Calls</h1>
-</font>
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Arthur Mulder</h3>
+  <img src="IMG-20180427-WA0015.jpg" class="img-responsive img-square margin" style="display:inline" alt="me" width="350" height="350">
+  <h3>Leerling op het Montessori Lyceum Amsterdam</h3>
+</div>
 
-<font size="5"  color="green" >
-<h1>A Kall Hoffman Story</h1>
-</font>
- 
- <a href="-1.html">
- <font size="4"  color="green" text-align="center">
- <h1>>start</h1>
- </font>
- 
- </a>
- </h1>
- 
- <div class="relative">
- <img><img src="Aopening gif.gif" alt="beach" style="width:100%; height:810px" align="center"; ><img/>
- </div>
- 
-<footer> 
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Inhoud</h3>
+  <p>Op deze website is informatie over mijn hobby's, school en toekomstplannen te vinden.</p>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Ik, door de jaren heen.</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p></p>
+      <img src="20180908_211409.2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p></p>
+      <img src="20161110_200908.jpg" class="img-responsive margin" style="width:150%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p></p>
+      <img src="sneeuw.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Website gemaakt door <a href="websidehtml.html">Arthur Mulder</a> in 2018</p> 
 </footer>
+
 </body>
 </html>
 
